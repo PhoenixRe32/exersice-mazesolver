@@ -1,9 +1,10 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.junifer</groupId>
-  <artifactId>Junifer-MazeSolver</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Junifer-MazeSolver</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.junifer</groupId>
+	<artifactId>Junifer-MazeSolver</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>Junifer-MazeSolver</name>
 
 	<build>
 		<plugins>
@@ -18,8 +19,20 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<dependencies>
+		<dependency>
+			<groupId>org.jgrapht</groupId>
+			<artifactId>jgrapht-core</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.5</version>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -27,5 +40,4 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 </project>
